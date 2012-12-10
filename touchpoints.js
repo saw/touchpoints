@@ -89,15 +89,10 @@
     }
     
     function reaper(){
-        try{
-            var id;
-            for(id in touches) {
-                kill(id);
-            }
-        }catch(e){
-            log(e.message);
-        }
-
+          var id;
+          for(id in touches) {
+              kill(id);
+          }
     }
         
     document.addEventListener('touchstart', mover);
